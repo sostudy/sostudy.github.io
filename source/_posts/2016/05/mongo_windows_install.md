@@ -5,6 +5,7 @@ tags:
  - Install
 categories:
  - MongDB
+ - Windows
 #: true
 ---
 ## 安装MongoDB
