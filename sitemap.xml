@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://soyl.live/mongoDB-install-linux/</loc>
+    
+    <lastmod>2016-05-08T10:53:15.668Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://soyl.live/mongo_windows_install/</loc>
+    
+    <lastmod>2016-05-08T10:21:50.226Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://soyl.live/java_myeclipse_svn_Dynamic/</loc>
     
     <lastmod>2016-05-05T14:40:34.000Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://soyl.live/java_myeclipse_Failed_HttpSession/</loc>
     
     <lastmod>2016-05-05T14:39:20.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://soyl.live/mongo_windows_install/</loc>
-    
-    <lastmod>2016-05-03T13:57:40.000Z</lastmod>
     
   </url>
   

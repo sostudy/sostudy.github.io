@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>MyEclipse2015启动Tomcat中项目时报错HttpSession出错 | Soyl&#39;s</title>
+  <title>Linux下安装MongoDB | Soyl&#39;s</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="MyEclipse2015启动Tomcat中项目时报错HttpSession出错">
+  <meta name="description" content="安装MongoDB">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MyEclipse2015启动Tomcat中项目时报错HttpSession出错">
-<meta property="og:url" content="http://soyl.live/java_myeclipse_Failed_HttpSession/index.html">
+<meta property="og:title" content="Linux下安装MongoDB">
+<meta property="og:url" content="http://soyl.live/mongoDB-install-linux/index.html">
 <meta property="og:site_name" content="Soyl's">
-<meta property="og:description" content="MyEclipse2015启动Tomcat中项目时报错HttpSession出错">
-<meta property="og:updated_time" content="2016-05-05T14:39:20.000Z">
+<meta property="og:description" content="安装MongoDB">
+<meta property="og:updated_time" content="2016-05-08T10:53:15.668Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MyEclipse2015启动Tomcat中项目时报错HttpSession出错">
-<meta name="twitter:description" content="MyEclipse2015启动Tomcat中项目时报错HttpSession出错">
+<meta name="twitter:title" content="Linux下安装MongoDB">
+<meta name="twitter:description" content="安装MongoDB">
   
     <link rel="alternative" href="/atom.xml" title="Soyl&#39;s" type="application/atom+xml">
   
@@ -186,11 +186,11 @@ var _hmt = _hmt || [];
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-java_myeclipse_Failed_HttpSession" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-mongoDB-install-linux" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/java_myeclipse_Failed_HttpSession/" class="article-date">
-  	<time datetime="2016-05-05T12:30:37.000Z" itemprop="datePublished">2016-05-05</time>
+      <a href="/mongoDB-install-linux/" class="article-date">
+  	<time datetime="2016-05-08T10:20:43.000Z" itemprop="datePublished">2016-05-08</time>
 </a>
     </div>
   
@@ -203,7 +203,7 @@ var _hmt = _hmt || [];
         
   
     <h1 class="article-title" itemprop="name">
-      MyEclipse2015启动Tomcat中项目时报错HttpSession出错
+      Linux下安装MongoDB
     </h1>
   
 
@@ -212,12 +212,12 @@ var _hmt = _hmt || [];
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Failed/">Failed</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JDK/">JDK</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Install/">Install</a></li></ul>
 	</div>
 
         
 	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/MyEclipse/">MyEclipse</a>
+	<a class="article-category-link" href="/categories/MongDB/">MongDB</a><a class="article-category-link" href="/categories/MongDB/Linux/">Linux</a>
 	</div>
 
 
@@ -229,23 +229,37 @@ var _hmt = _hmt || [];
       
 	  
 
-                                <h2 id="MyEclipse2015启动Tomcat中项目时报错HttpSession出错"><a href="#MyEclipse2015启动Tomcat中项目时报错HttpSession出错" class="headerlink" title="MyEclipse2015启动Tomcat中项目时报错HttpSession出错"></a>MyEclipse2015启动Tomcat中项目时报错HttpSession出错</h2><a id="more"></a>
-<p>Tomcat中项目时报错HttpSession出错，如下<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/mj_oto_edus_auto_new]]</span><br><span class="line">	************************************</span><br><span class="line">Caused by: java.lang.NoClassDefFoundError: HttpSession</span><br><span class="line">	************************************</span><br><span class="line">Caused by: java.lang.NoClassDefFoundError: HttpSessionBindingEvent</span><br><span class="line">	************************************</span><br></pre></td></tr></table></figure></p>
-<p>百度搜索HttpSession的信息,百科对它的简单介绍是Java的一个接口。</p>
-<blockquote>
-<p>HttpSession是Java平台对session机制的实现规范，因为它仅仅是个接口，具体到每个web应用服务器的提供商，除了对规范支持之外，仍然会有一些规范里没有规定的细微差异。</p>
+                                <h3 id="安装MongoDB"><a href="#安装MongoDB" class="headerlink" title="安装MongoDB"></a>安装MongoDB</h3><a id="more"></a>
+<h4 id="在mongo官网下载最新版本的安装包"><a href="#在mongo官网下载最新版本的安装包" class="headerlink" title="在mongo官网下载最新版本的安装包"></a>在mongo官网下载最新版本的安装包</h4><blockquote>
+<p><a href="https://www.mongodb.org/downloads#production" target="_blank" rel="external">https://www.mongodb.org/downloads#production</a></p>
 </blockquote>
-<h4 id="HttpSession-Java-EE-5-SDK"><a href="#HttpSession-Java-EE-5-SDK" class="headerlink" title="HttpSession (Java EE 5 SDK)"></a><a href="http://www.baidu.com/link?url=qVAKkg9VvrY8jxVRdnzq9pMkL4ohgErwtvWY9PNUTF0K7fbY2rjd3uErWygKyqjYXB7tmNMMVy-wCQyO9u67yTK5Dc0LjR9aGaHlbaKOTgC0iEGz_WJaemVRAg-rYfsC&amp;wd=&amp;eqid=835b47ba000119cc00000003572af1b5" target="_blank" rel="external"><em>HttpSession</em> (Java EE 5 SDK)</a></h4><p>发现原来他是在Java EE 5中，于是在MyEclipse中Libraries中加上“JavaEE 5.0 Generic Library”，继续执行项目，项目继续报错，缺少jstl。<br>查看“JavaEE 5.0 Generic Library”发现其中只有一个“javaee.jar”,于是在MyEclipse的目录中找到“javaee.jar”所在的目录，发现其中有个文件README.txt<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">This folder contains libraries obtained from the Sun JEE5 Referene SDK.  </span><br><span class="line">http:<span class="comment">//java.sun.com/javaee/downloads/index.jsp</span></span><br><span class="line">The license <span class="keyword">for</span> these <span class="number">3</span> jar libraries is also contained in <span class="keyword">this</span> folder.</span><br><span class="line"></span><br><span class="line">The JSF <span class="number">1.2</span> <span class="function">implementation <span class="title">files</span> <span class="params">(jsf-impl.jar, jsf-api.jar)</span></span><br><span class="line">were obtained from: https:<span class="comment">//javaserverfaces.dev.java.net/files/documents/1866/52042/jsf-1.2_04-b07-FCS.zip</span></span><br><span class="line"></span><br><span class="line">The JSTL 1.2 implementation files: <span class="params">(jstl<span class="number">-1.2</span>.jar)</span></span><br><span class="line">were obtained from: https:<span class="comment">//maven-repository.dev.java.net/repository/jstl/jars/jstl-1.2.jar</span></span></span><br></pre></td></tr></table></figure></p>
-<p>发现原来还少jsf-impl.jar, jsf-api.jar，jstl-1.2.jar这三个文件<br>于是继续在Library中添加JSF Mojarra 1.2_04 Libraries,JSTL 1.2 Library两项。</p>
+<h4 id="解压mongodb程序包"><a href="#解压mongodb程序包" class="headerlink" title="解压mongodb程序包"></a>解压mongodb程序包</h4><p>解压文件</p>
 <blockquote>
-<p>JSF Mojarra 1.2_04 Libraries 包含jsf-impl.jar, jsf-api.jar<br>JSTL 1.2 Library 包含jstl-1.2.jar</p>
+<p>我这里为了方便，直接离线下载的程序包放到/usr/local/目录下，安装位置随意，注意下后面文件配置的路径就好了。</p>
 </blockquote>
-<p>然后运行Tomcat，问题解决</p>
-<p>我是在MyEclipse 2015使用的，其他版本的不清楚，也可以直接下载到本地，加载到项目中。</p>
+<figure class="highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf mongodb-linux-x86_64-rhel70-<span class="number">3.2</span>.<span class="number">6</span>.tgz</span><br></pre></td></tr></table></figure>
+<p>为了后面操作方便，改下文件名<br><figure class="highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv mongodb-linux-x86_64-rhel70-<span class="number">3.2</span>.<span class="number">6</span> mongodb</span><br></pre></td></tr></table></figure></p>
+<p>进入mongodb的目录<br><figure class="highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd mongodb</span><br></pre></td></tr></table></figure></p>
+<p>新建mongdb的data和log目录<br><figure class="highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir db</span><br><span class="line">cd db</span><br><span class="line">mkdir <span class="keyword">data</span></span><br><span class="line">mkdir logs</span><br></pre></td></tr></table></figure></p>
+<p>创建MongoDB.log文件<br><figure class="highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd logs</span><br><span class="line">vi MongoDB.log</span><br><span class="line"><span class="comment">#直接使用wq命令保存文件</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="新建mongo的conf文件"><a href="#新建mongo的conf文件" class="headerlink" title="新建mongo的conf文件"></a>新建mongo的conf文件</h4><figure class="highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ../bin</span><br><span class="line">vi mongodb.conf</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>百度网盘链接: <a href="http://pan.baidu.com/s/1gfNhWcz" target="_blank" rel="external">http://pan.baidu.com/s/1gfNhWcz</a> 密码: r39f</p>
+<p>填入下面的内容，使用wq命令保存退出</p>
 </blockquote>
-
+<figure class="highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">dbpath=/usr/local/mongodb/db/<span class="keyword">data</span></span><br><span class="line">logpath=/usr/local/mongodb/db/logs/MongoDB.log</span><br><span class="line">port=<span class="number">27017</span></span><br><span class="line">fork=true</span><br><span class="line">nohttpinterface=true</span><br></pre></td></tr></table></figure>
+<h3 id="配置MongoDB"><a href="#配置MongoDB" class="headerlink" title="配置MongoDB"></a>配置MongoDB</h3><h4 id="mongodb的配置文件地址"><a href="#mongodb的配置文件地址" class="headerlink" title="mongodb的配置文件地址"></a>mongodb的配置文件地址</h4><p>输入下面的命令<br><figure class="highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./mongod -f /usr/local/mongodb/bin/mongodb.conf</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>弹出下面的内容则证明配置成功</p>
+</blockquote>
+<figure class="highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@mjjw bin]<span class="comment"># ./mongod -f /usr/local/mongodb/bin/mongodb.conf</span></span><br><span class="line">about to fork child <span class="keyword">process</span>, waiting <span class="keyword">until</span> server is ready <span class="keyword">for</span> connections.</span><br><span class="line">forked <span class="keyword">process</span>: <span class="number">2292</span></span><br><span class="line">child <span class="keyword">process</span> started successfully, parent exiting</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这时候已经可以正常启动关闭了，启动是直接运行bin目录下的mongo文件</p>
+</blockquote>
+<h4 id="设置mongdb为自动启动"><a href="#设置mongdb为自动启动" class="headerlink" title="设置mongdb为自动启动"></a>设置mongdb为自动启动</h4><figure class="highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/rc.d/rc.local</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在最后面填入下面的内容</p>
+</blockquote>
+<figure class="highlight ps"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/mongodb/bin/mongod --config /usr/local/mongodb/bin/mongodb.conf</span><br></pre></td></tr></table></figure>
                                   
     </div>
     
@@ -254,18 +268,9 @@ var _hmt = _hmt || [];
     
 <nav id="article-nav">
   
-    <a href="/mongoDB-install-linux/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Linux下安装MongoDB
-        
-      </div>
-    </a>
   
-  
-    <a href="/java_myeclipse_svn_Dynamic/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">MyEclipse2015项目报错Failed while installing Dynamic Web Module 2.5</div>
+    <a href="/java_myeclipse_Failed_HttpSession/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MyEclipse2015启动Tomcat中项目时报错HttpSession出错</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -300,7 +305,7 @@ var _hmt = _hmt || [];
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="java_myeclipse_Failed_HttpSession" data-title="MyEclipse2015启动Tomcat中项目时报错HttpSession出错" data-url="http://soyl.live/java_myeclipse_Failed_HttpSession/"></div>
+	<div class="ds-thread" data-thread-key="mongoDB-install-linux" data-title="Linux下安装MongoDB" data-url="http://soyl.live/mongoDB-install-linux/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
