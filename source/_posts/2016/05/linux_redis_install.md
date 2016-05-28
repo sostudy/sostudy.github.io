@@ -5,6 +5,7 @@ tags:
  - Install
 categories: 
  - Redis
+ - Linux
 #toc: true
 ---
 # Redis安装
