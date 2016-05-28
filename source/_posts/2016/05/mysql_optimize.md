@@ -9,11 +9,11 @@ categories:
 ---
 # MySQL参数学习
 <!--more-->
-## [mysqld_safe]
+# [mysqld_safe]
 pid-file=/usr/mysql/run/localhost.pid
 > 单独设置一个pid的存放地址，以保护不被误删
 
-##[mysql]
+# [mysql]
 port=3306
 > 端口号
 
@@ -23,8 +23,8 @@ default-character-set=utf8
 no-auto-rehash
 > 自动补全，如同linux下的table键
 
-## [mysqld]
-### 目录
+# [mysqld]
+## 目录
 basedir=/usr/mysql
 > MySQL主目录
 
@@ -43,12 +43,12 @@ lc_messages_dir=/u02/mysql/share
 socket=/u02/mysql/run/mysql.sock
 > 套字文件，保护不被误删，每次重启mysql都会重新创建，在[client]也要设置相同位置
 
-### 日志
-#### 错误日志
+## 日志
+### 错误日志
 log_error=/u02/mysql/log/localhost.log
 > 指定Log错误文件路径
 
-#### 慢查询日志
+### 慢查询日志
 slow_query_log_file=/u02/mysql/log/slow.log
 > 指定慢查询日志文件路径
 
@@ -61,14 +61,14 @@ long_query_time=2
 log_queries_not_using_indexes=on
 > 设置是否把没有使用索引的SQL放到慢查询日志中,off是没有开启,on是开
 
-#### 普通日志
+### 普通日志
 general_log=off
 > 是否开启普通日志，此参数开启后会记录MySQL所有执行sql记录，包括错误的sql，除特殊情况不建议开启
 
 general_log_file=/u02/mysql/log/general.log
 > 普通日志文件位置
 
-#### Innodb设置
+### Innodb设置
 innodb_data_home_dir=/u02/data
 > innodb引擎的共享表空间数据文件根目录
 
