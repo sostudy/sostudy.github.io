@@ -26,10 +26,11 @@ rpm -qa|grep mysql
 > http://dev.mysql.com/downloads/mysql/5.6.html#downloads
 
 ![](http://7xt9fi.com2.z0.glb.clouddn.com/mysql/installmysql-do.png)
-#### 解压编译
+#### 解压编译，安装工具包
 ```ps
 tar xvf mysql-5.6.30.tar.gz
 cd mysql-5.6.30
+yum -y install make gcc gcc-c++ cmake bison-devel ncurses-devel libaio bison libaio libaio-devel perl-Data-Dumper net-tools
 ```
 > 编译，注意cmake \后面操作都带有“-”符号
 
@@ -51,6 +52,10 @@ cmake \
 -DDEFAULT_COLLATION=utf8_general_ci
 ```
 编译成功，执行安装
+> MySQL5.7版本需增加“-DDOWNLOAD_BOOST=1 -DWITH_BOOST=/usr/local/boost”
+
+> 如果编译出现问题，执行“rm CMakeCache.txt”，便可重新编译
+
 ```ps
     make && make install
 ```
@@ -78,6 +83,13 @@ cd /usr/local/mysql
 #### 执行脚本
 ```ps
 scripts/mysql_install_db --basedir=/usr/local/mysql --datadir=/usr/local/mysql/data --user=mysql
+```
+#####5.7以后版本，执行脚本方法变动如下
+```ps
+#之前版本mysql_install_db是在mysql_basedir/script下，5.7放在了mysql_basedir/bin目录下,且已被废弃.
+/usr/local/mysql/bin/mysqld --initialize-insecure --user=mysql --basedir=/usr/local/mysql --datadir=/usr/local/mysql/data
+#“–initialize”会生成一个随机密码(~/.mysql_secret)，而”–initialize-insecure”不会生成密码.
+#–datadir目标目录下不能有数据文件
 ```
 > /usr/local/mysql/my.cnf 为my.cnf默认路径
 
